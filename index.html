@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Form</title>
+        <style>
+                #register-form{
+                 width: 300px;
+                 background-color: cornflowerblue;
+                 padding: 20px;
+                 margin: auto;
+             }
+             #list{
+                 margin-top: 20px;
+             }
+             .label{
+              margin-top: 6px;
+              margin-bottom: 6px;
+             }
+             #submit{
+                 margin-top: 10px;
+                 margin-left: 70px;
+                 margin-right: auto;
+             }
+             .text-box{
+             width: 250px;
+             }
+             
+        </style>
+    </head>
+    <body style="background-color: darksalmon; height: 100%;">
+        <form id="register-form">
+            <fieldset>
+                <legend style="font-size: 20px;"><b>Registration form</b></legend>
+                <div>
+                    <p class="label">Full name</p> 
+                    <input class="text-box" type="text" name="fullname" >
+             </div>
+             <div>
+                    <p class="label">Email ID</p>
+                    <input class="text-box" type="email" name="email" >
+             </div>
+           
+            <div>
+                   <p class="label">Mobile Number</p>
+                   <input class="text-box" type="tel" name="Mobile Number" >
+            </div>
+            <div>
+                <p class="label">Date of Birth</p>
+                <input class="text-box" type="date" name="dateofbirth" min="1998-01-01">
+            </div>
+            <div>
+                <p  class="label">Course</p>
+                <select class="text-box" name="course">
+                <option value="B-TECH">B-TECH</option>
+                <option value="M-TECH">M-TECH</option>
+                <option value="MBA">MBA</option>
+            </select>
+            </div>
+            <div>
+                <p class="label">Branch</p>
+                <input class="text-box" list="courses">
+                <datalist id="courses">
+                    <option value="Mechanical engineering"></option>
+                    <option value="computer science engineering"></option>
+                    <option value="electrical and electronic engineering"></option>
+                    <option value="electrical and communication engineering"></option>
+                    <option value="civil engineering"></option>
+                </datalist>
+            </div>
+            <div>
+                   <p class="label">Gender</p>
+                   <input type="radio" name="male">male
+                   <input type="radio" name="female">female
+                   <input type="radio" name="others">others
+            </div>
+           
+            <div>
+                   <p class="label">Security Questions</p>
+                   <select class="text-box" name="security questions">
+                   <option value="fav color">what is your favourite color</option>
+                   <option value="fav dish">what is your favourite dish</option>
+                   <option value="fav sports">what is your favourite sports</option>
+                </select>
+            </div>
+             <div>
+                 <textarea  class="text-box" name="answers" cols="25" rows="4"></textarea>
+             </div>
+             <div>
+                <p class="label">Resume</p>
+                <input class="text-box" type="file" name="resume" >
+            </div>
+             <div style="margin-top: 10px;">
+                 <input type="checkbox" name="t&c" id="">
+                 <label class="label">I agree to all terms and conditions</label>
+             </div>
+            
+                <input id="submit" type="submit" name="submit">
+                <input type="reset" value="reset">
+            </fieldset>
+           
+          
+     </form>
+    </body>
+</html>
